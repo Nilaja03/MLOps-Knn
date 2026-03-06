@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 
 # 1. Load and Split
 iris = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)
 
 # 2. Scaling (CRITICAL for KNN)
 scaler = StandardScaler()
